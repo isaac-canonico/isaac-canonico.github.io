@@ -6,11 +6,13 @@
 
 
 html {
+    
     --red: #A30000;
     --blue: #004777;
     --orange: #FF7700;
     --beige: #EFD28D;
     --light-blue: #00AFB5;
+    font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
 a {
@@ -33,15 +35,15 @@ a:hover {
 
 .header_name {
     margin: 1rem;
+    font-family: 'Major Mono Display', monospace, sans-serif;
+    color: var(--beige);
 }
 
-.main__area {
-    display: flex;
-    flex-direction: column;
-}
 
 .header_subtitle {
     margin: 1rem;
+    font-family: 'Major Mono Display', monospace, sans-serif;
+}
 }
 
 .header_title {
@@ -62,15 +64,17 @@ a:hover {
 }
 
 aside {
+    justify-items: center;
     background-image: linear-gradient(
         rgba(255, 0, 0, 0.45), 
         rgba(255, 0, 0, 0.45)), url(static/clouds.jpg);
 }
 .main__area {
-    background-color: var(--beige);
-    width: 70vw;
+    background-image: linear-gradient(-90deg, red, var(--beige));
     display: flex;
     flex-direction: column;
+    width: 70vw;
+ 
 }
 
 .me__picture {
