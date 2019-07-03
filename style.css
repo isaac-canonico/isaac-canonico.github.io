@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+    --red: #A30000;
+    --blue: #004777;
+    --orange: #FF7700;
+    --beige: #EFD28D;
+    --light-blue: #00AFB5;
+}
+
+a {
+    color: var(--beige);
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+.nav_links-items {
+    margin: 1rem;
+    justify-items: center;
+    color: var(--beige);
+    font-weight: 2rem;
+    
+}
+
+.header_name {
+    margin: 1rem;
+}
+
+.main__area {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_subtitle {
+    margin: 1rem;
+}
+
+.header_title {
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    min-width: 100vw;
+}
+
+
+.flex-grid {
+  display: flex;
+  background-color: var(--red);
+}
+
+aside {
+    background-image: linear-gradient(
+        rgba(255, 0, 0, 0.45), 
+        rgba(255, 0, 0, 0.45)), url(static/clouds.jpg);
+}
+.main__area {
+    background-color: var(--beige);
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.me__picture {
+    margin: 1rem;
+    border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+    }
+
+body {
+    padding: 20px;
+  }
+
+
+
+@media (max-width: 400px) {
+    .flex-grid {
+      display: block;
+    }
+}
