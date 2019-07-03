@@ -43,19 +43,21 @@ a:hover {
 
 .header_subtitle {
     margin: 1rem;
-    color:white;
+    color: #ddd;
  
 }
 
 .header_title {
     margin: 1rem;
+    color: #ddd;
 }
 
 .container {
     display: flex;
     min-height: 100vh;
     flex-direction: row;
-    min-width: 100vw;
+  position: relative;
+    width: 100vw;
 }
 /* Application Classes*/
 .hidden {
@@ -66,30 +68,146 @@ a:hover {
 .flex-grid {
   display: flex;
   background-color: var(--red);
+
 }
 
-section {
-    border-bottom: 2px solid var(--blue);
+h2 {
+    color: #ddd;
 }
+
+.portfolio {
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+.portfolio_images {
+    width: 12rem;
+  margin: 1 rem;
+
+}
+
+.skills {
+    justify-items: center;
+    align-items: space-between;
+    border-bottom: 2px solid #dddddd;
+    border-top: 2px solid #dddddd;
+
+}
+.skills_title {
+    margin: 1rem;
+color: #ddd;
+}
+.resume {
+    margin-top: 1rem;
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+}
+
+.resume_title {
+    margin: 1rem;
+    height: 100vh;
+}
+
+.contact_me {
+   margin: 1rem;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.social__tags {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.skills_list {
+    justify-items: center;
+      padding: 1rem;
+    align-items: space-between;
+}
+
+.about_me {
+    border-bottom: 2px solid #dddddd;
+}
+
+.about_description {
+    font-weight: bold;
+    margin: 6rem;
+    height:100vh;
+    color: #dddddd;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
 
 aside {
     justify-items: center;
-    border-right: 2px solid #ddd;
+    position: sticky;
+    position: fixed; 
+    height: 100vh;
+    border-right: 3px solid;
+    border-color: linear-gradient(-90deg, var(--beige), #dddddd);
   
     background-image: linear-gradient(
         rgba(255, 0, 0, 0.137), 
         rgba(255, 0, 0, 0.534)), url(static/clouds.jpg);
 }
 .main__area {
-    background-image: linear-gradient(-90deg, var(--beige), #dddddd);
+    background-image: linear-gradient(-90deg, var(--beige),var(--light-blue));
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 100vw;
+    margin-left:230px;
  
 }
 
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.projects_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 75vw;
+    justify-content: center;
+    align-items: space-between;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .projects_row {
+    margin: 0 -5px;
+  }
+  .projects_row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .project-column {
+    margin-top: 1rem;
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+  
+  .article-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
 .me__picture {
-    border-radius: 45px;
+    border-radius: 60px;
 }
 
 ul {
