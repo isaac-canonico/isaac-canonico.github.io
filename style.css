@@ -16,7 +16,7 @@ html {
 }
 
 a {
-    color: var(--beige);
+    color: #ddd;
     text-decoration: none;
     list-style-type: none;
 }
@@ -28,22 +28,23 @@ a:hover {
 .nav_links-items {
     margin: 1rem;
     justify-items: center;
-    color: var(--beige);
+    color: #dddddd;
     font-weight: 2rem;
     
 }
 
 .header_name {
+    color: #ddd;
     margin: 1rem;
-    font-family: 'Major Mono Display', monospace, sans-serif;
-    color: var(--beige);
+    
+    font-weight: bold;
 }
 
 
 .header_subtitle {
     margin: 1rem;
-    font-family: 'Major Mono Display', monospace, sans-serif;
-}
+    color:white;
+ 
 }
 
 .header_title {
@@ -56,6 +57,10 @@ a:hover {
     flex-direction: row;
     min-width: 100vw;
 }
+/* Application Classes*/
+.hidden {
+    display:none;
+}
 
 
 .flex-grid {
@@ -63,14 +68,20 @@ a:hover {
   background-color: var(--red);
 }
 
+section {
+    border-bottom: 2px solid var(--blue);
+}
+
 aside {
     justify-items: center;
+    border-right: 2px solid #ddd;
+  
     background-image: linear-gradient(
-        rgba(255, 0, 0, 0.45), 
-        rgba(255, 0, 0, 0.45)), url(static/clouds.jpg);
+        rgba(255, 0, 0, 0.137), 
+        rgba(255, 0, 0, 0.534)), url(static/clouds.jpg);
 }
 .main__area {
-    background-image: linear-gradient(-90deg, red, var(--beige));
+    background-image: linear-gradient(-90deg, var(--beige), #dddddd);
     display: flex;
     flex-direction: column;
     width: 70vw;
@@ -78,17 +89,12 @@ aside {
 }
 
 .me__picture {
-    margin: 1rem;
-    border-radius: 25px;
+    border-radius: 45px;
 }
 
 ul {
     list-style-type: none;
     }
-
-body {
-    padding: 20px;
-  }
 
 
 
@@ -96,4 +102,13 @@ body {
     .flex-grid {
       display: block;
     }
+}
+
+    .dark HTML {
+        color: #ddd;
+                background-color: var(--blue);
+
+
+    
+
 }
