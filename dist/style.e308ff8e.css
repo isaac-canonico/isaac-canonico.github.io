@@ -5,14 +5,20 @@
 }
 
 
-html {
-    
-    --red: #A30000;
-    --blue: #004777;
-    --orange: #FF7700;
-    --beige: #EFD28D;
-    --light-blue: #00AFB5;
+body {
+
+    --beige: #A30000;
+    color: black;
+    --orange: #004777;
+    --blue: #FF7700;
+    --red: #EFD28D;
+    --light-blue: black;
     font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+.theme-button {
+
+    margin: .5rem;
 }
 
 a {
@@ -26,7 +32,7 @@ a:hover {
 }
 
 .nav_links-items {
-    margin: 1rem;
+    margin: 2rem;
     justify-items: center;
     color: #dddddd;
     font-weight: 2rem;
@@ -43,18 +49,20 @@ a:hover {
 
 .header_subtitle {
     margin: 1rem;
-    color:white;
+    color: #ddd;
  
 }
 
 .header_title {
     margin: 1rem;
+    color: #ddd;
 }
 
 .container {
     display: flex;
     min-height: 100vh;
     flex-direction: row;
+  position: relative;
     width: 100vw;
 }
 /* Application Classes*/
@@ -66,31 +74,146 @@ a:hover {
 .flex-grid {
   display: flex;
   background-color: var(--red);
+
 }
 
-section {
-    border-bottom: 2px solid var(--blue);
+h2 {
+    color: #ddd;
 }
+
+.portfolio {
+    padding: 1rem;
+    max-height: 20rem;
+    margin: 1rem;
+    border-bottom: 1px solid #ddd;
+    overflow: scroll;
+}
+.portfolio_images {
+    width: 12rem;
+  margin: 1 rem;
+
+}
+
+.skills {
+    justify-items: center;
+    align-items: space-between;
+    border-bottom: 2px solid #dddddd;
+    border-top: 2px solid #dddddd;
+
+}
+.skills_title {
+    margin: 1rem;
+color: #ddd;
+}
+.resume {
+    margin-top: 1rem;
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+}
+
+.resume_title {
+    margin: 1rem;
+    height: 100vh;
+}
+
+.contact_me {
+   margin: 1rem;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.social__tags {
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+contact_link {
+    margin: 1 rem;
+}
+
+.skills_list {
+    justify-items: center;
+      padding: 1rem;
+    align-items: space-between;
+}
+
+.about_me {
+    border-bottom: 2px solid #dddddd;
+}
+
+.about_description {
+    font-weight: bold;
+    margin: 6rem;
+    height:100vh;
+    color: #dddddd;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
 
 aside {
     justify-items: center;
-    border-right: 2px solid;
+    position: sticky;
+    position: fixed; 
+    height: 100vh;
+    border-right: 3px solid;
     border-color: linear-gradient(-90deg, var(--beige), #dddddd);
   
     background-image: linear-gradient(
         rgba(255, 0, 0, 0.137), 
         rgba(255, 0, 0, 0.534)), url(/clouds.f75268f1.jpg);
 }
-.main__area {
-    background-image: linear-gradient(-90deg, var(--beige),var(--light-blue)));
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
- 
+
+
+.wrapper {
+    margin: 0;
+    padding: 0;
 }
 
+
+
+
+.projects_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 75vw;
+    justify-content: center;
+    align-items: space-between;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .projects_row {
+    margin: 0 -5px;
+  }
+  .projects_row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .project-column {
+    margin-top: 1rem;
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+  
+  .article-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
 .me__picture {
-    border-radius: 45px;
+    border-radius: 60px;
 }
 
 ul {
@@ -105,12 +228,31 @@ ul {
     }
 }
 
-    .dark HTML {
-        color: #ddd;
-                background-color: var(--blue);
+.hidden {
+    display: none;
+}
+.main__area {
+    background-image: linear-gradient(-90deg, var(--beige),var(--light-blue));
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-left:230px;
+ 
+}
+main__area dark {
+    background-color: #dddddd;   
+    color: black;
+}
 
+.dark {
 
+    --red: #A30000;
+    --blue: #004777;
+    --orange: #FF7700;
+    --beige: #EFD28D;
+    --light-blue: #00AFB5;
     
+
 
 }
 

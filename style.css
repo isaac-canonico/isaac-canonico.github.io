@@ -5,14 +5,20 @@
 }
 
 
-html {
-    
-    --red: #A30000;
-    --blue: #004777;
-    --orange: #FF7700;
-    --beige: #EFD28D;
-    --light-blue: #00AFB5;
+body {
+
+    --beige: #A30000;
+    color: black;
+    --orange: #004777;
+    --blue: #FF7700;
+    --red: #EFD28D;
+    --light-blue: black;
     font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+.theme-button {
+
+    margin: .5rem;
 }
 
 a {
@@ -26,7 +32,7 @@ a:hover {
 }
 
 .nav_links-items {
-    margin: 1rem;
+    margin: 2rem;
     justify-items: center;
     color: #dddddd;
     font-weight: 2rem;
@@ -77,8 +83,10 @@ h2 {
 
 .portfolio {
     padding: 1rem;
+    max-height: 20rem;
     margin: 1rem;
     border-bottom: 1px solid #ddd;
+    overflow: scroll;
 }
 .portfolio_images {
     width: 12rem;
@@ -117,9 +125,14 @@ color: #ddd;
 }
 .social__tags {
     display: flex;
+    margin: 1rem;
     flex-direction: row;
    justify-content: space-between;
    align-items: center;
+}
+
+contact_link {
+    margin: 1 rem;
 }
 
 .skills_list {
@@ -155,14 +168,7 @@ aside {
         rgba(255, 0, 0, 0.137), 
         rgba(255, 0, 0, 0.534)), url(static/clouds.jpg);
 }
-.main__area {
-    background-image: linear-gradient(-90deg, var(--beige),var(--light-blue));
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin-left:230px;
- 
-}
+
 
 .wrapper {
     margin: 0;
@@ -222,11 +228,30 @@ ul {
     }
 }
 
-    .dark HTML {
-        color: #ddd;
-                background-color: var(--blue);
+.hidden {
+    display: none;
+}
+.main__area {
+    background-image: linear-gradient(-90deg, var(--beige),var(--light-blue));
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-left:230px;
+ 
+}
+main__area dark {
+    background-color: #dddddd;   
+    color: black;
+}
 
+.dark {
 
+    --red: #A30000;
+    --blue: #004777;
+    --orange: #FF7700;
+    --beige: #EFD28D;
+    --light-blue: #00AFB5;
     
+
 
 }
