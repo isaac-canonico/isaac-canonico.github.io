@@ -11,6 +11,8 @@ class Events {
        
         })
     }
+
 }
+
 
 module.exports = Events
