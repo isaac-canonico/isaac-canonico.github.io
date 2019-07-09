@@ -1,30 +1,18 @@
 {
-  "name": "portfolio-js",
+  "name": "isaac-canonico.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --colors",
+    "test": "jest test",
     "start": "parcel index.html",
     "predeploy": "rm -rf dist && parcel build index.html",
-    "deploy": "gh-pages -d dist",
-    "dev" : "parcel index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/isaac-canonico/portfolio-with-js.git"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/isaac-canonico/portfolio-with-js/issues"
-  },
-  "homepage": "https://github.com/isaac-canonico/portfolio-with-js#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.3"
-  },
-  "devDependencies": {
     "gh-pages": "^2.0.1",
     "parcel": "^1.12.3"
   }
