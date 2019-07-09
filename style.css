@@ -83,10 +83,11 @@ h2 {
 
 .portfolio {
     padding: 1rem;
-    max-height: 20rem;
+    max-height: 10rem;
     margin: 1rem;
     border-bottom: 1px solid #ddd;
     overflow: scroll;
+    width: auto;
 }
 .portfolio_images {
     width: 12rem;
