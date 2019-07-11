@@ -8,7 +8,6 @@ class Events {
                 
         body.classList.toggle('dark')
     
-       
         })
     }
 
