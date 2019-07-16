@@ -83,7 +83,7 @@ h2 {
 
 .portfolio {
     padding: 1rem;
-    max-height: 20rem;
+    height: auto;
     margin: 1rem;
     border-bottom: 1px solid #ddd;
     overflow: scroll;
@@ -214,6 +214,7 @@ aside {
 
 .me__picture {
     border-radius: 60px;
+    margin-left: 1rem;
 }
 
 ul {
