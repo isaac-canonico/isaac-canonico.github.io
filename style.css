@@ -151,6 +151,7 @@ contact_link {
 
 .about_description {
     font-weight: bold;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.05);
     margin: 6rem;
     height:100vh;
     color: #dddddd;
